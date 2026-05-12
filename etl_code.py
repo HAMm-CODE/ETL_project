@@ -10,4 +10,3 @@ def extract_from_csv(file_to_process):
 	dataframe = pd.read_csv(file_to_process) 
 	return dataframe 
 
-

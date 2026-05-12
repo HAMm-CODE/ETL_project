@@ -72,6 +72,12 @@ Example XML:
 - Timestamped progress messages are appended to `log_file.txt`. The timestamp format in the script is Year-Monthname-Day-Hour-Minute-Second.
 - If your input files vary in column order or include extra columns, ensure they contain `name`, `height`, and `weight` fields; otherwise, pre-normalize them.
 
+**Troubleshooting**
+
+**Empty DataFrame / No data in transformed_data.csv:**
+- **Cause:** No source data files (`.csv`, `.json`, or `.xml`) found in the project folder.
+- **Solution:** Add at least one input file with the correct format and columns (`name`, `height`, `weight`) to the project folder, then run the script again.
+
 **Extending / Customizing**
 - To change output filename or log name, edit variables at the top of etl_code.py.
 - Add validation for missing/invalid values before transformation to handle corrupt inputs.

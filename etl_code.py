@@ -91,4 +91,4 @@ load_data(target_file,transformed_data)
 log_progress("Load phase Ended") 
  
 # Log the completion of the ETL process 
-log_progress("ETL Job Ended") 
+log_progress("ETL Job Ended")
